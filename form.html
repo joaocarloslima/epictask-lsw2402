@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicTask</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link
+        rel="stylesheet"
+        shref="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+    />
+    <script src="./js/cadastrar.js"></script>
+</head>
+<body>
+
+    <main>
+        <h1>EpicTask</h1>
+
+        <article>
+            <h2>Cadastrar Tarefa</h2>
+
+                <input  
+                    aria-describedby="erro-titulo"
+                    type="text" 
+                    id="titulo" 
+                    placeholder="título da tarefa"
+                >
+                <small id="erro-titulo"></small>
+
+                <input 
+                    aria-describedby="erro-descricao"
+                    type="text" 
+                    id="descricao" 
+                    placeholder="descrição da tarefa"
+                    >
+                    <small id="erro-descricao"></small>
+                    
+                    
+                <input 
+                    aria-describedby="erro-pontos"
+                    type="number" 
+                    id="pontos" 
+                    value="0"
+                >
+                <small id="erro-pontos"></small>
+
+                <div>
+                    <a role="button" class="outline secondary" href="index.html">cancelar</a>
+                    <button onclick="cadastrar()">salvar</button>
+                </div>
+
+        </article>
+
+    </main>
+    
+</body>
+</html>

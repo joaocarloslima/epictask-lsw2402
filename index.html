@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicTask</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link
+        rel="stylesheet"
+        shref="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/carregar.js" defer></script>
+    <script src="./js/apagar.js" defer></script>
+    <script src="./js/stats.js" defer></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+
+    <main>
+        <h1>EpicTask</h1>
+
+        <a href="form.html" role="button">
+            nova tarefa
+        </a>
+
+        <section class="grid">
+            <article id="stats-pending">
+                <header>Tarefas Pendentes</header>
+                <span>
+                    10
+                </span>
+            </article>
+            <article id="stats-done">
+                <header>Tarefas Concluídas</header>
+                <span>
+                    10
+                </span>
+            </article>
+            <article id="stats-total">
+                <header>Total de Pontos</header>
+                <span>
+                    10
+                </span>
+            </article>
+            <article id="stats-score">
+                <header>Pontos Ganhos</header>
+                <span>
+                    10
+                </span>
+            </article>
+        </section>
+
+        <section class="grid" id="lista"></section>
+
+
+    </main>
+    
+</body>
+</html>
